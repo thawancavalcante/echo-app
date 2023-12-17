@@ -1,0 +1,19 @@
+.button {
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: .4rem 0;
+    padding-left: .5rem;
+    border-radius: 8px;;
+}
+
+.button:hover {
+    background: var(--secondary-hover);
+}
+
+.button.active {
+    background: var(--primary-hover);
+}

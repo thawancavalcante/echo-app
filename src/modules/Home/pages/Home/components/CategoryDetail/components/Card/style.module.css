@@ -1,0 +1,47 @@
+.container {
+    background: var(--secondary);
+    text-align: left;
+    color: var(--text);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 15rem;
+    cursor: pointer;
+}
+
+.container:hover {
+    background: var(--secondary-hover);
+    transform: scale(1.02);
+}
+
+.container .title {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .description {
+    line-height: .9rem;
+    font-size: .8rem;
+    margin-top: -5px;
+    margin-bottom: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.container .info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+}
+
+.container .info .totalUsers {
+    text-align: right;
+    margin-left: auto;
+}

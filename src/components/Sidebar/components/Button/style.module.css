@@ -1,0 +1,33 @@
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border-radius: 50%;
+    color: #fff;
+    transition: transform 0s, border-radius 500ms;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.button.active {
+    border-radius: 10px;
+}
+
+.button:hover {
+    border-radius: 10px;
+
+}
+
+.button:active {
+    transform: translateY(1px); 
+}

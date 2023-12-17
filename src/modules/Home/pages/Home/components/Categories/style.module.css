@@ -1,0 +1,19 @@
+.container {
+    background: var(--secondary-background);
+    color: var(--text);
+    height: 100%;
+    overflow: overlay;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+    width: 20rem;
+}
+
+.container .title {
+    color: var(--text);
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-left: .7rem;
+    margin-bottom: 1rem;
+}

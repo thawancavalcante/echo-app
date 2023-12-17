@@ -1,12 +1,13 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter, Outlet } from 'react-router-dom'
 import IRoute from './interface/route'
 import HomePage from '../modules/Home/pages/Home'
+import Sidebar from '../components/Sidebar'
 
 const routes: IRoute[] = [
   {
     title: 'Home',
     path: HomePage.route,
-    element: <HomePage/>,
+    element: <HomePage />,
   },
   {
     title: 'communities',
@@ -15,14 +16,25 @@ const routes: IRoute[] = [
   },
 ]
 
+const Template = () => {
+  return (
+    <>
+      <Sidebar />
+      <Outlet />
+    </>
+  )
+}
+
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {routes.map((route) => (
-          <Route {...route} key={route.title} />
-        ))}
-        <Route element={<div>404</div>} path='*' />
+        <Route element={<Template />}>
+          {routes.map((route) => (
+            <Route {...route} key={route.title} />
+          ))}
+          <Route element={<div>404</div>} path='*' />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

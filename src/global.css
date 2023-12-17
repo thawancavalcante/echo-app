@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Libre+Caslon+Text:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*=============RESET CSS=============*/
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove anchor style */
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+/*=============/RESET CSS=============*/
+
+:root {
+  --primary: #705697;
+  --primary-hover: #E4F6D4;
+  --background: #F6F6F6;
+  --text: #616161;
+  --dark-hover: #D3DBCD;
+  --secondary: #EDEDF5;
+  --secondary-hover: #EDE8EF;
+  --secondary-text: #BDB0D8;
+  --secondary-background: #F2F2F2;
+  --error: #ED5E68;
+  --disabled: #ECECEC;
+}
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+}
+
+body {
+  font-family: "Lexend";
+  color: var(--text);
+  background: var(--background);
+}
+
+
+
+/* .swal2-icon.swal2-info {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+.swal2-actions .swal2-confirm {
+  background-color: var(--primary) !important;
+  color: var(--secondary) !important;
+  box-shadow: none!important;
+} */
