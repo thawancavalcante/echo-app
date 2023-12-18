@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import useAuth from "../../context/useAuth"
 import RegisterPage from "../Register"
-import HomePage from "../../../Home/pages/Home"
+import HomePage from "../../../Channels/pages/Home"
 
 const LoginPage = () => {
   const navigate = useNavigate()

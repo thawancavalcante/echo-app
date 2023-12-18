@@ -7,7 +7,7 @@ interface ICategoryItem {
     id: string
     label: string
 }
-//TODO:add the communities endpoint to load data
+//TODO:add the channels endpoint to load data
 const categories: ICategoryItem[] = [
     {
         navigateTo: '',

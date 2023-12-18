@@ -13,7 +13,7 @@ const Sidebar = () => {
     const navigate = useNavigate()
     const [activeIndex, setIndex] = useState<number>(0)
 
-    //TODO: add new communities on sidebar
+    //TODO: add new channels on sidebar
     const [items] = useState<IButtonItem[]>([
         {
             navigateTo: '/',
@@ -21,21 +21,21 @@ const Sidebar = () => {
             tooltip: 'Homepage'
         },
         {
-            navigateTo: 'communities',
+            navigateTo: '/channels/1',
             children: <>T.H</>,
             tooltip: 'Thawan Hahahaha'
         },
         {
-            navigateTo: 'communities',
+            navigateTo: '/channels/2',
             children: <>T.H</>,
             tooltip: 'Thawan Hahahaha'
         },
     ])
 
     const handleNavigate = (item: IButtonItem, index: number): void => {
-        if (index === activeIndex) {
-            return
-        }
+        // if (index === activeIndex) {
+        //     return
+        // }
         setIndex(index)
         navigate(item.navigateTo)
     }
@@ -44,6 +44,7 @@ const Sidebar = () => {
         <div className={Style.container}>
             <div className={Style.items}>
                 {items.map((item, index) => (
+                    //TODO: need to create a way to shows a channel preview
                     <Button
                         key={`${index}-${item.navigateTo}`}
                         active={index === activeIndex}

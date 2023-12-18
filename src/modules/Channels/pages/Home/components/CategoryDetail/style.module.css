@@ -15,7 +15,7 @@
     margin-bottom: 1rem;
 }
 
-.groupsContainer {
+.channelsContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

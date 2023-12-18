@@ -7,11 +7,11 @@ interface ICategoriesProps {
 
 export interface ICategory {
     title: string
-    groups: IGroup[]
+    channels: IChannel[]
 }
 
 
-export interface IGroup {
+export interface IChannel {
     id: string
     name: string
     onlineUsers: number
@@ -24,8 +24,8 @@ const CategoryDetail = (props: ICategoriesProps) => {
         <div className={Style.container}>
             <div className={Style.title}>{props.category.title}</div>
 
-            <div className={Style.groupsContainer}>
-                {props.category.groups.map(item => <Card key={item.id} group={item} />)}
+            <div className={Style.channelsContainer}>
+                {props.category.channels.map(item => <Card key={item.id} channel={item} />)}
             </div>
         </div>
     )

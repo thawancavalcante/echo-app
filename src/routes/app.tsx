@@ -1,18 +1,19 @@
 import { Routes, Route, BrowserRouter, Outlet } from 'react-router-dom'
 import IRoute from './interface/route'
-import HomePage from '../modules/Home/pages/Home'
 import Sidebar from '../components/Sidebar'
+import Chat from '../modules/Channels/pages/Chat'
+import HomePage from '../modules/Channels/pages/Home'
 
 const routes: IRoute[] = [
   {
-    title: 'Home',
+    title: 'Channels',
     path: HomePage.route,
     element: <HomePage />,
   },
   {
-    title: 'communities',
-    path: '/communities',
-    element: <div>Communities</div>,
+    title: 'chat',
+    path: Chat.route,
+    element: <Chat />,
   },
 ]
 

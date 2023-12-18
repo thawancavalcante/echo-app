@@ -1,6 +1,7 @@
 .container {
     height: 50px;
-    background-color: #EDE8EF;
+    background-color: var(--secondary-hover);
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,6 +10,7 @@
 
 .container .name {
     max-width: 15rem;
+    font-size: .9rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

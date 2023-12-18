@@ -1,0 +1,47 @@
+
+.container .info {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+    padding-left: 1rem;
+}
+
+.container .info .date {
+    font-size: .8rem;
+    color: #000;
+}
+
+
+.container .info .date {
+    font-size: .8rem;
+    color: var(--text);
+}
+
+.container .message {
+    display: flex;
+    gap: 1rem;
+}
+
+.container .message:hover {
+    background: var(--primary-hover);
+}
+
+.container .firstMessage:hover {
+    background: var(--primary-hover);
+}
+
+.container .message .content{
+    padding-left: 1rem;
+    margin-right: auto;
+}
+
+.container .firstMessage:hover .contentTime, .container .message:hover .contentTime {
+    opacity: 1;
+}
+
+.container .message .contentTime{
+    padding-right: 1rem;
+    font-size: .7rem;
+    color: var(--text);
+    opacity: 0;
+}

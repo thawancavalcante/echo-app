@@ -7,7 +7,7 @@ import Style from './style.module.css'
 const categories: Map<string, ICategory> = new Map<string, ICategory>([
     ['popular', {
         title: 'Popular communities',
-        groups: [
+        channels: [
             {
                 id: '111111111',
                 name: 'MidJourney',
@@ -47,7 +47,7 @@ const categories: Map<string, ICategory> = new Map<string, ICategory>([
     }],
     ['2', {
         title: 'Category 1',
-        groups: [
+        channels: [
             {
                 id: '1111111111111',
                 name: 'MidJourney',
@@ -67,7 +67,7 @@ const categories: Map<string, ICategory> = new Map<string, ICategory>([
     }],
     ['3', {
         title: 'Category 2',
-        groups: [
+        channels: [
             {
                 id: '1111111111111',
                 name: 'Genshin Impact Official',
@@ -79,15 +79,15 @@ const categories: Map<string, ICategory> = new Map<string, ICategory>([
     }],
     ['4', {
         title: 'Category 3',
-        groups: [],
+        channels: [],
     }],
     ['5', {
         title: 'Category 4',
-        groups: [],
+        channels: [],
     }],
     ['6', {
         title: 'Category 5',
-        groups: [],
+        channels: [],
     }],
 ])
 
